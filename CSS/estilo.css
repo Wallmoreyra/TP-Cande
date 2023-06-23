@@ -1,0 +1,341 @@
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+header{
+    background-color: #8d0281;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav{
+    background-color: #52034b;
+    padding: 10px;
+    
+}
+
+footer {
+  background-color: #440035;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+    align-items: center;
+  }
+
+.breadcrumb li {
+    margin: 0 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+.breadcrumb li a {
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.breadcrumb li a:hover{
+    color: red;
+    font-size: 1.1rem;
+}
+
+.estiloCont{
+  background-color: white;
+  padding: 10px;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.estiloBoxShadow{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Bienvenido*/
+
+.containerBienvenido{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-image {
+    width: 49%;
+  }
+
+.left-image img{
+    width: 100%;
+    height: auto;
+}
+.left-image p{
+    text-align: center;
+}
+
+.rigth-image {
+    width: 49%;
+}
+
+.rigth-image div img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.rigth-image p{
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .containerBienvenido {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .left-image{
+        width: 100%;
+    }
+    .rigth-image{
+        width: 100%;
+    }
+  }
+
+/* Fin Bienvenido*/
+
+/* Video Presentacion*/
+
+.video00{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: auto;
+}
+.video00 iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fin Video Presentacion*/
+
+/* Quienes somos*/
+
+.imagenes-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .imagen {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (min-width: 768px) {
+    .imagen {
+      width: 50%;
+    }
+    .parrafoQuienesSomos{
+      margin-left: 10%;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .parrafoQuienesSomos{
+      margin-left: 20%;
+    }
+  }
+
+/* Fin Quienes somos*/
+
+/* Que hacemos*/
+
+.listaQueHacemos{
+    list-style-type: none;
+    padding: 0;
+    
+}
+
+.listaQueHacemos li:before {
+    content: "➜";
+    margin-right: 8px;
+}
+
+.listaQueHacemos li{
+    word-wrap: break-word;
+    margin-bottom: 2px;
+    text-align: justify;
+}
+
+/* Fin Que hacemos*/
+
+/* Nuestas Redes*/
+
+.logos-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.logo-instagram {
+  width: 150px;
+  height: 150px;
+  margin: 30px;
+  align-items: center;
+}
+.descripcion {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* Fin Nuestras Redes*/
+
+/* Novedades*/
+
+.contNove{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.contNove .botonIz{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 200px;
+  left: 6%;
+  font-size: 5rem;
+  cursor: pointer;
+}
+.contNove .botonDe{
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  width: 200px;
+  right: 6%;
+  font-size: 5rem;
+  cursor: pointer;
+}
+.nuCarrusel{
+  width: 80%;
+  height: auto;
+  background-color: #440035;
+  object-fit: contain;
+
+}
+.nuCarrusel img{
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .nuCarrusel {
+    width: 100%;
+  }
+  .contNove .botonDe{
+    position: absolute;
+    text-align: end;
+    color: rgba(0, 0, 0, 30%);
+  }
+  .contNove .botonIz{
+    position: absolute;
+    text-align: left;
+    color: rgba(0, 0, 0, 30%);
+  }
+}
+/* Fin Novedades*/
+
+/* Radio*/
+
+.descripcion{
+  position: relative;
+  bottom: 10%;
+}
+
+.imagenes-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+}
+.imagen {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .imagen {
+    width: 50%;
+  }
+}
+
+/* Fin Radio*/
+
+/* revista*/
+
+.logos-contenedor1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.logos-contenedor1 a img{
+  align-items: center;
+  width: 150px;
+}
+
+.imagenes-contenedor1{
+  width: 90%;
+  margin-left: 5%;
+}
+.imagen1{
+  width: 100%;
+}
+
+/* Fin revista*/
+
+/* Contacto*/
+
+.formularioContacto form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formularioContacto form label,input,textarea{
+  width: 80%;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+input[type="submit"] {
+  background-color: #aa168a;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: #8a0045;
+}
+
+.success-message {
+  color: rgb(128, 0, 70);
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+/* Fin Contacto*/
+
